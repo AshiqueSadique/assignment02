@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+          <title>Welcome</title>
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+        </head>
+
+<body>
+
+
+
+  <header>
+    <h1>Welcome to the void !</h1>
+    
+
+  </header>
+
+  <!-- ===== 1st division ===== -->
+  <div class="containerone">
+
+    <div class="about">
+      <h2> The void is an empty<br>space where you can<br>pretty much do nothing!</h2>
+      
+    </div>
+
+    <div class="login-section">
+      <img src="">
+      <h3>What would you like to do ?</h3>
+
+
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+    </div>
+
+    
+
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="src/images2.png" alt="Avatar" class="avatar">
+        <p>LOGIN</p>
+      </div>
+
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Your Username Here" name="username" required>
+
+        <label for="pswrd"><b>Password</b></label>
+        <input type="password" placeholder="Enter Your Password Here" name="pswrd" required>
+          
+        <button type="submit">Login</button>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="pswrd"><a href="forgot.html">Forgot password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+  <div id="id02" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="src/images1.png" alt="Avatar" class="avatar">
+        <p>SIGN UP</p>
+      </div>
+
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Your Username Here" name="username" required>
+
+        <label for="email"><b>Email Address</b></label>
+        <input type="Email" placeholder="Enter Your Email Address Here" name="email" required>
+
+        <label for="pswrd"><b>Password</b></label>
+        <input type="password" placeholder="Enter Your Password Here" name="pswrd" required>
+
+        <label for="pswrd"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Enter Your Password Here" name="pswrd" required>
+          
+        <button type="submit">Sign Up</button>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+
+
+  <footer>
+    
+  </footer>
+
+</body>
+</html>
